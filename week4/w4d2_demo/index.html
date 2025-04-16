@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W4D2 DEMO</title>
-</head>
-<body>
     <style>
-        @font-face {font-family: CityLight; src: url('../resources/CITYLIGL.TTF');
 
+        @font-face {
+            font-family: cityFont;
+            src: url('/week4/w4d2_demo/fonts/BertholdCityLightRegular.otf');
+
+        }
+
+        h1 {
+            font-family: cityFont;
         }
 
         body {
@@ -21,8 +26,8 @@
             padding:10px;
             margin:10px;
         }
-        
-        #wrapper{
+              
+        #wrapper {
             background-color: rgb(43, 75, 43);
 
             color: rgb(212, 250, 250);
@@ -31,7 +36,8 @@
             margin:auto; /*adds equal space to left and right of element, MUST have a width specified first*/
 
             padding:10px;
-        
+            
+            font-family: cityFont;
         }
 
         #nav {
@@ -81,12 +87,15 @@
             background-color:rgb(114, 114, 234);
             color:rgb(0, 149, 255);
 
-            font-style:bold;
 
             /*background-image: url('images/...')*/
         }
-
     </style>
+
+</head>
+<body>
+    
+    
     
     <div id="wrapper">
         <br><hr><br>
@@ -105,7 +114,7 @@
         <div id="nav">
             <div id="buttons">
 
-            <h4 style=>
+            
                 <br>
                 <a href="index.html" class="nav-btn">HOME</a>
                 
@@ -115,7 +124,7 @@
                 <br><br>
             
             </div>
-            </h4>
+            
             
         </div><!--/ #nav-->
 
@@ -123,7 +132,7 @@
 
         <!--CONTENT-->
         <div id="content">
-            <h1>
+            
 
                 <div id="main-content"><!--MAIN-CONTENT-->
                     
