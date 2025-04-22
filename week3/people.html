@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="E STAN">
+    <meta name="description" content="W3 Demo - Multiple Pages">
+
+    <title>W3 | TheLastOfUs</title>
+
+    <!--IN DOCUMENT CSS BELOW-->
+    <style>
+        /* we are now writing CSS in this element*/
+        
+        /* selecting elements by their tag type*/
+        body {
+            /* property: value*/
+            background-color: #b7e9f1;
+        }
+
+        div {
+            /* these style changes will apply to all divs in the page. when selecting by tag type, all tags of that tag type are affected*/
+            border:4px solid rgba(219, 198, 234, 0.833);
+            /* padding adds space between content and border*/
+            padding:11px; /* applies to all 4 sides: top, right, bottom, left*/
+
+            /* margin adds space between border and other elements*/
+            margin: 22px; /* applies to all 4 sides: top, right, bottom, left*/
+
+        }
+
+        /* selecting an element by its #ID*/
+        #wrapper {
+            width:1000px;
+            margin:auto; /* auto equal left and right when width is applied*/
+
+            border-color: rgba(253, 180, 205, 0.651);
+
+        }
+        /* selecting a group by their .CLASS name*/
+        .border{
+            border:5px solid rgb(95, 106, 192)
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!-- #wrapper div to "wrap around" all content of the page-->
+    <div id="wrapper">
+
+    <!--#HEADER-->
+        <div id="header" class="border fancy">
+            <h1 id="title">The Last of Us</h1>
+
+
+        </div><!--/ #header-->
+        <!--#NAV-->
+        <div id="nav">
+
+            <!-- use relative link paths for pages inside of your site-->
+            <a href="index.html" class="link">HOME</a>
+            <a href="about.html" class="link">ABOUT</a>
+            <a href="people.html" class="link">PEOPLE</a>
+            <a href="places.html" class="link">PLACES</a>
+
+            
+        </div><!--/ #nav-->
+        <!--#CONTENT-->
+            <h2>People Page</h2>
+
+            <img src="images/ep2.jpg" alt="still from The Last of Us" style="width:100%;">
+        <div id="content">
+
+
+            
+        </div><!--/ #content-->
+        <!--#FOOTER-->
+        <div id="footer" class="border">
+            <a href="#wrapper">Back to Top</a>
+            <p>&copy; E STAN | SE111.05 | SPRING 2025</p>
+
+            <a href="images/Screenshot 2025-04-07 174525.png">Validation Screenshot</a>
+        </div><!--/ #footer-->
+    </div><!--/ #wrapper-->
+
+
+</body>
+</html>

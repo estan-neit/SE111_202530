@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--this is a comment in HTML-->
+    <!--<head> loads first, tells browser info about how to interpret our page-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="ES STAN">
+    <meta name="description" content="W2D1 Demo">
+
+    <title>W#2 | Demo #1</title>
+</head>
+<body style="background-color: rgb(238, 197, 221)">
+    <p>Take us back to the <a href="#w2">bottom</a> of the page</p>
+    <!--the <body> element holds ALL CONTENT FOR THE PAGE!-->
+    <!--there should only ever be ONE <head> and ONE <body>-->
+
+    <!--Block Level Emelents: building blocks of page! create main structure (both orginbazational and content-wise)-->
+
+    <!--headings [1-6] are just like heading styles in Word-->
+    <h1 id="top" style="border:10px dotted rgba(32, 245, 50, 0.562)">Heading 1</h1> 
+    <h2 style="border:10px double rgba(36, 92, 59, 0.849)">Heading 2</h2>
+    <h3 style="border:10px dashed teal">Heading 3</h3>
+    <h4 style="border:10px groove rgba(141, 202, 243, 0.76)">Heading 4</h4>
+    <h5 style="border:10px inset goldenrod">Heading 5</h5>
+    <h6 style="border:10px outset indigo">Heading 6</h6>
+
+    <!--HORIZONTAL RULE below <h4> : creates separation between sections of page-->
+    <hr style="border:30px groove rgba(235, 62, 148, 0.87)">
+
+    <!--DIVs are dividers/devisions - they do not contain content "content", they contain and help organize other HTML elements-->
+    <div style="background-color:rgb(247, 216, 178); color:rgb(38, 102, 81);">
+        <h2 id="lists">List Types in HTML</h2>
+
+        <!--ordered list-->
+        <ol>
+            <!--add a list for each line item in the list-->
+            <li>Music</li>
+            <li>Playing with River and Rosie</li>
+            <li>Vidya</li>
+        </ol>
+
+        <!--unordered list-->
+        <ul>
+            <!--add a list item for each line item in the list-->
+            <li>dog</li>
+            <li>do</li>
+            <li>d</li>
+            <li> </li>
+            <li>d</li>
+            <li>do</li>
+            <li>dog</li>
+
+        </ul>
+
+    </div>
+
+    <hr style="border: 30px groove rgba(235, 62, 148, 0.87)">
+
+    <h2>Basic Paragraph Text + In-Line Tags</h2>
+
+    <!--in-line elements do NOT create structure, they are used *in line* of another HTML element! they usually add visual style or emphasis, help support SEO, or support data management-->
+
+    <!--<p> for paragraphg (block level element)-->
+    <p style="color: rgba(64, 80, 64, 0.671)">Hello my name is <b>Eli</b> and I have
+        <br><!--break space - creates new empty line-->
+        <i>2</i> dogs: 
+        <br>
+        River 
+        <br>
+        <u>and</u> 
+        <br>
+        Rosie
+    </p>
+
+    <!--in lines for SEO support (search engine optimizartion)-->
+    <p style="font-size: 20px">The <strong>strong</strong> tag makes content appear bolded.</p>
+    <p>The <em>emphasis</em> tag makes content appear italicized.</p>
+
+    <p><b><i><u>C O M B I N A T I O N</u></i></b></p>
+    
+    <hr style="border: 30px groove rgba(235, 62, 148, 0.87)">
+    <!-- Continuing into week 2 with basic tags-->
+    <h2 id="w2">W2D1 - Intro to img, a, and id attributes</h2>
+
+    <!-- Add a link to neit.edu-->
+    <!-- This is an example of an ABSOLUTE path (starts with protocol)-->
+
+    <h4>Check out my school's website: <a href="https://www.neit.edu" target="_blank">neit.edu</a></h4>
+    <!-- target="_blank" opens the link in a new tab-->
+
+    <!-- Link to our W1 demo webpage-->
+    <!-- Since this week2 folder lives within a larger "SE111_202530" folder, we can create RELATIVE paths to other content housed within "SE111_202530"-->
+    <p>My first HTML demo can be found <a href="../../week2/demo/index.html" target="_blank">here</a> for your review</p>
+
+    <!-- In page "jump" link below; utilizes #idValue-->
+    <p>Take us back to the <a href="#top">top</a> of the page</p>
+    <p>Take us back to the <a href="#lists">lists</a> of the page</p>
+    
+    <hr style="border: 30px groove rgba(235, 62, 148, 0.87)">
+
+    <h2>Images!</h2>
+
+    <!-- It is always safest to use RELATIVE file paths with our image content (these are resources that live directly in our website's root folder)-->
+
+    <img src="../W2D2/images/meca.jpg" alt="The front entrance of MECA'S Porteous Building" width="500px" title="MECA!">
+    
+    <!-- Avoid  ABSOLUTE image paths like below (we have less control)-->
+    <img src="https://preview.redd.it/mr-banchos-sushi-is-being-shut-down-v0-8tge3v71zekc1.jpg?width=1920&format=pjpg&auto=webp&s=27503ee73e9f7941903c53bc6da7377cfb0c87d0" alt="Bancho Sushi will likely be shut down because Dave has $-31,539" width="500px" title="Bancho Sushi BANKRUPT">
+    
+</body>
+</html>

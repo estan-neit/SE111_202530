@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie | Main Page</title>
+    <style>
+
+        @font-face {
+            font-family: backOfNostromoJacket;
+            src: url('/week4/w4d2_demo/fonts/PumpOpti-DemiBold.otf');
+
+        }
+
+        h1 {
+            font-family: backOfNostromoJacket;
+            font-size: 75px;
+        }
+
+        body {
+            background-color: rgb(251, 178, 178);
+
+        }
+
+        div {
+            border:1px rgba(172, 147, 147, 0.747);
+            padding:10px;
+            margin:10px;
+        }
+              
+        #wrapper {
+            background-color: rgb(43, 75, 43);
+
+            color: rgb(212, 250, 250);
+
+            width:980px;
+            margin:auto; /*adds equal space to left and right of element, MUST have a width specified first*/
+
+            padding:10px;
+            
+            font-family: backOfNostromoJacket;
+        }
+
+        #nav {
+            border:2px solid rgba(37, 64, 40, 0.842);
+            padding:10px;
+            padding-bottom: 80px;
+            margin:10px;
+
+            border-radius: 100px;
+
+            box-shadow:5px 5px 50px rgb(180, 220, 248);
+        }
+
+        #content {
+            font-size: 40px;
+        }
+
+        #buttons {
+            border:1px rgb(161, 104, 248);
+            height:50px;
+
+            width:525px;
+            margin:auto;
+            padding:10px;
+
+            font-family: backOfNostromoJacket;
+        }
+        
+        .nav-btn {
+            width:150px;
+            height:50px;
+
+            text-align: center; /*x-axis alignment*/
+            line-height:50px; /*y-axis alignment must match */
+
+            background-color: rgb(25, 12, 31);
+
+            float:left;
+            display:block;
+
+            margin-right:10px;
+            margin-left:10px;
+
+            text-decoration:none;
+
+            font-size:24px;
+
+            border-radius: 5px;
+
+        }
+
+        .nav-btn:hover{
+            background-color:rgb(114, 114, 234);
+            color:rgb(0, 149, 255);
+
+
+            /*background-image: url('images/...')*/
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div id="wrapper">
+        <br><hr><br>
+        <!--HEADER-->
+        <div id="header">
+            <h1>
+                <br>
+                <em>Alien</em> (1979)
+                <br><br>
+            </h1>
+        </div><!--/ #header-->
+        
+        <br><br><hr><br><br>
+
+        <!--NAV-->
+        <div id="nav">
+            <div id="buttons">
+
+                <br>
+                <a href="index.html" class="nav-btn">HOME</a>
+                
+                <a href="cast.html" class="nav-btn">CAST</a>
+                
+                <a href="review.html" class="nav-btn">REVIEW</a>
+                <br><br>
+            
+            </div>
+            
+        </div><!--/ #nav-->
+
+        <br><br><hr><br><br>
+
+        <!--CONTENT-->
+        <div id="content">
+
+            <div id="main-content"><!--MAIN-CONTENT-->
+                
+                <p><strong>Alien</strong></p>
+                <p><strong>Rating:</strong> R</p>
+                <p><strong>Genre:</strong> Sci-fi, Thriller, Horror</p>
+                <p><strong>Run Time:</strong> 1h 57m</p>
+                <p><strong>Release Date:</strong> June 22, 1979</p>
+                <p><strong>Production Company:</strong> 20th Century Studios</p>
+
+            </div><!--/ #main content-->
+
+        </div><!--/ #content-->
+
+        <br><br><hr><br><br>
+
+        <!--FOOTER-->
+        <div id="footer" style="border:8px groove rgba(135, 220, 160, 0.811);">
+            <br>
+            <a href="#wrapper" style="border:6px groove rgb(146, 146, 248);">Back to top</a>
+            <br>
+            <p>&copy; E STAN | SE111 | Spring 2025</p>
+            <img src="images/Screenshot_2025-04-21_014144.png" alt="HTML validation proof">
+        </div><!--/ #footer-->
+
+    </div>
+</body>
+</html>
