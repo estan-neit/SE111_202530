@@ -136,13 +136,13 @@
             var age = document.querySelector(`#age`).value
 
             age = Number(age)
-            var full = fname + ` ` + last
+            var full = fname + ` ` + lname
 
             console.log(`form info: ${fname}, ${lname}, ${age}, ${full}`)
             alert(`Hello there ${full}`)
 
             var hello = document.querySelector(`#hello`)
-            hello.innerHTML += `${full}`
+            hello.innerHTML += ` ${full}`
 
             var dog_years = age * 7
 
