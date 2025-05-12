@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W7D2 DEMO | RIDDLES</title>
+</head>
+<body>
+    <h1>W7D2 - Riddles</h1>
+    <!--RIDDLES AREA - each riddle will be found within a div-->
+    <!--Each div will have 
+            * a div with a container
+            * an <h3> with the riddle/question
+            * an <input type="text"> to allow the user to guess 
+            * an <input type="submit"> to allow the user to reveal the answer
+            * a <span> to hold the answer
+    -->
+
+    <!--reusable div box for each riddle-->
+    <div class="question-box">
+
+        <h3 class="questions">1. What can travel the world without leaving its corner</h3>
+
+        <input type="submit" value="Reveal Answer" id="submit1">
+        <p class="answers"><span id="answer1"></span></p>
+
+        <hr>
+
+    </div>
+
+    <div class="question-box">
+
+        <h3 class="questions">2. What goes up a chimeny down but won't go down a chimney up?</h3>
+
+        <input type="submit" value="Reveal Answer" id="submit2">
+        <p class="answers"><span id="answer2"></span></p>
+
+        <hr>
+
+    </div>
+
+    <div class="question-box">
+
+        <h3 class="questions">3. If you have me, you want to share me, but if you share, me you will no longer have me. What am I?</h3>
+
+        <input type="submit" value="Reveal Answer" id="submit3">
+        <p class="answers"><span id="answer3"></span></p>
+
+        <hr>
+
+    </div>
+
+    <div class="question-box">
+
+        <h3 class="questions">4. What has keys but no locks, space but no room, you can enter but you cant go inside?</h3>
+
+        <input type="submit" value="Reveal Answer" id="submit3">
+        <p class="answers"><span id="answer3"></span></p>
+
+        <hr>
+
+    </div>
+
+    <!--IN DOCUMENT JS BELOW-->
+    <script>
+        //================================QUESTION 1================================
+
+        // tie the submit button to an event
+        document.querySelector(`#submit1`).addEventListener(`click`, answerOne)
+
+        // create a counter to hold user's attempts
+        var count = 0
+
+        function answerOne(e)// event parameter: event, ev, evnt, e
+        {
+            // user attempts to answer / button is clicked --> update count
+            count ++
+
+            // select the appropriate span tag for the question (will hold and write the answer to page later)
+            var span1 = document.querySelector(`#answer1`)
+
+            // declare ans storethe riddle's answwe to a variable
+            var answer = `A stamp`
+
+            // get user's entered answer
+            var userAnswer = document.querySelector(`#question1`).value
+
+            if(userAnswer.toLowerCase() == answer.toLowerCase() && count <= 3){ // user guessed correctly
+
+                // write the ruddle answer to the span tag element using .innerHTML property (attribute)
+                span1.innerHTML = `<b>Correct.</b> The answer is: <i>${answer}</i>`
+
+            }
+            else if(count <= 3){
+                span1.innerHTML = `<b>No.</b> Try again`
+            }
+            else {
+                span1.innerHTML = `The answer is: <i>${answer}</i>`
+            }
+
+            // write the riddle answer to the pspan tag element using .innerHTML property (attribute)
+            span1.innerHTML = answer
+
+        }// answerOne() close
+
+        //================================QUESTION 2================================
+
+        // tie the submit button to an event
+        document.querySelector(`#submit2`).addEventListener(`click`, answerTwo)
+
+        function answerTwo(e)// event parameter: event, ev, evnt, e
+        {
+
+            // select the appropriate span tag for the question (will hold and write the answer to page later)
+            var span1 = document.querySelector(`#answer2`)
+
+            // declare ans storethe riddle's answwe to a variable
+            var answer = `An umbrella`
+
+            // write the riddle answer to the pspan tag element using .innerHTML property (attribute)
+            span1.innerHTML = answer
+
+        }// answerOne() close
+
+        //================================QUESTION 3================================
+
+        // tie the submit button to an event
+        document.querySelector(`#submit3`).addEventListener(`click`, answerThree)
+
+        function answerThree(e)// event parameter: event, ev, evnt, e
+        {
+
+            // select the appropriate span tag for the question (will hold and write the answer to page later)
+            var span1 = document.querySelector(`#answer3`)
+
+            // declare ans storethe riddle's answwe to a variable
+            var answer = `A secret`
+
+            // write the riddle answer to the pspan tag element using .innerHTML property (attribute)
+            span1.innerHTML = answer
+
+        }// answerOne() close
+
+
+
+    </script>
+</body>
+</html>
